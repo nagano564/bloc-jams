@@ -1,4 +1,4 @@
- var collectionItemTemplate =
+var collectionItemTemplate =
      '<div class="collection-album-container column fourth">'
    + '  <img src="assets/images/album_covers/01.png"/>'
    + '  <div class="collection-album-info caption">'
@@ -20,7 +20,7 @@ window.onload = function(){
     
     collectionContainer.innerHTML = "";
     
-    for (var i =0; i<12, i++){
+    for (var i =0; i < 12; i++){
         collectionContainer.innerHTML += collectionItemTemplate;
     }
 }
