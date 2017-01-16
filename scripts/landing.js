@@ -43,15 +43,10 @@ var loopAndShow = function() {
 };
 
 window.onload = function(){
-<<<<<<< HEAD
-    if (window.innerHeight > 850){
-        animatePoints(pointsArray);
-        console.log("hello")
-=======
+
     if (window.innerHeight > 950){
         //animatePoints(pointsArray);
         loopAndShow();
->>>>>>> assign-8
     }
     
     var sellingPoints = document.getElementsByClassName("selling-points")[0];
