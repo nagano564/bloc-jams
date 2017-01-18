@@ -138,12 +138,16 @@ var playButtonTemplate = '<a class="album-song-button"><span class="ion-play"></
           for (var i = 0; i < songRows.length; i++) {
          songRows[i].addEventListener('mouseleave', function(event) {
              
-             var songItem = getSongItem(event.target);
-             var songItemNumber = songItem.getAttribute('data-song-number');
+            var songItem = getSongItem(event.target);
+            var songItemNumber = songItem.getAttribute('data-song-number');
  
-                if (songItemNumber !== currentlyPlayingSong) {
-                 songItem.innerHTML = songItemNumber;
-             } 
+            if (songItemNumber !== currentlyPlayingSong) {
+                songItem.innerHTML = songItemNumber;
+            } 
+            else {
+                //is the song playing? Y = show pause button; N = show song # ??? or play button
+            
+            }
              
          });
               
