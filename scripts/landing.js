@@ -1,4 +1,4 @@
-var animatePoints = function(){
+var loopAndShow = function(){
     var revealPoint = function(){
         
       $(this).css({
@@ -9,17 +9,9 @@ var animatePoints = function(){
     $.each($(".point"),revealPoint);
 };
 
-var loopAndShow = function() {
-    
-    for (var i = 0; i < pointsArray.length; i++ ){
-        revealPoint(i);
-    }
-    
-};
-
 $(window).load(function(){
     
-    if ($(window).height > 950){
+    if ($(window).height() > 950){
         //animatePoints(pointsArray);
         loopAndShow();
     }
