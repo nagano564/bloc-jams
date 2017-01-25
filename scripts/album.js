@@ -218,18 +218,11 @@ $(document).ready(function() {
 
 var togglePlayFromPlayerBar = function(){
 if (currentSoundFile.isPaused()) {
-//            $(this).html(pauseButtonTemplate);
             $('.main-controls .play-pause').html(playerBarPauseButton);
             currentSoundFile.play();
-    
-            //var lastSongNumber = getLastSongNumber(currentSongIndex);
             var $previousSongNumberCell = getSongNumberCell(currentlyPlayingSongNumber);
-            //var $lastSongNumberCell = getSongNumberCell(lastSongNumber);
-
             $previousSongNumberCell.html(pauseButtonTemplate);
-            //$lastSongNumberCell.html(lastSongNumber);
          } else {
-//                $(this).html(playButtonTemplate);
                 $('.main-controls .play-pause').html(playerBarPlayButton);
                 currentSoundFile.pause(); 
                 var $previousSongNumberCell = getSongNumberCell(currentlyPlayingSongNumber);
